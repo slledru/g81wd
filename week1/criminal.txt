@@ -1,0 +1,10 @@
+Input
+there are 3 suspects (reed, wryte, x)
+reed says 'I didn't do it'
+wryte says 'I didn't do it'
+x says 'reed did it'
+
+if reed is telling the truth, both wryte and x are lying.
+if reed is not telling the truth, both wryte and x are telling the truth
+
+if wryte is telling the truth, 
