@@ -5,4 +5,4 @@ var factorial = function fac(n) {
 };
 
 console.log(factorial(5));
-console.log(fac(5));
+//console.log(fac(5));
