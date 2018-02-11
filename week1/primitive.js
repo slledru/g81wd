@@ -1,0 +1,11 @@
+var a = 1;
+var b = '1';
+var l = true;
+var m = ['1'];
+var n = 0;
+var x = 3;
+var y = 4;
+var z = 5;
+console.log((x + y) > z || a == b || ((l || m) && n));
+console.log(!!n && (x + y + z) && a);
+console.log(m[n].length + n === 1);
