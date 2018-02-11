@@ -1,0 +1,5 @@
+input
+  someone stole artifact from Ms. Net
+  Net has only one child, Com
+  Com has only one child, Edu
+  Edu has only one child, Xyz
