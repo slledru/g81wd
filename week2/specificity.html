@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="./css/specificity.css">
+  </head>
+  <body>
+    <h1>Testing Specificity of CSS
+    </h1>
+    <div class="container">
+      <div class="first-child">
+        I’m the first child element. My width is auto. The sum of my horizontal margins, paddings and borders is 220 pixels.
+      </div>
+      <div class="second-child">
+        I’m the second child element. Like my previous sibling, the sum of my horizontal margins, paddings and borders is 220 pixels. But my width is 100%, so I don’t fit inside the containing block.
+      </div>
+    </div>
+    <div class="red">Here's my first div!</div>
+    <div>Here's my second div!</div>
+    <p>Here's my first p!</p>
+    <p id="green" class="red">Here's my second p!</p>
+  </body>
+</html>

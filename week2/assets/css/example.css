@@ -1,0 +1,37 @@
+.example {
+  background-color: gray;
+  width: 200px;
+}
+
+.box {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border: 10px solid orange;
+  display: inline-block;
+}
+
+.header {
+  background-color: cyan;
+  color: brown;
+  margin: 5px;
+  border: 5px solid pink;
+  padding: 5px;
+}
+.another-header {
+  background-color: cyan;
+  color: brown;
+  border: 5px solid pink;
+  padding: 5px;
+}
+
+.wrapper {
+  border: 1px dotted black;
+  margin: 10px;
+  display: inline-block;
+}
+
+p {
+  color: red;
+}

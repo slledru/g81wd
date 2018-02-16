@@ -1,0 +1,39 @@
+html {
+  color: white;
+}
+
+h1 {
+  color: gray;
+}
+
+div {
+  width: auto;
+  background-color: blue;
+  margin: 5px;
+}
+
+p {
+  width: 400px;
+  height: 100px;
+  background-color: purple;
+}
+
+#green {
+  background-color: green;
+}
+
+.red {
+  height: 200px;
+  background-color: red;
+}
+
+.container {
+  width:400px;
+  background-color: green;
+}
+.first-child {
+  width: auto;
+}
+.second-child {
+  width: 100%;
+}
