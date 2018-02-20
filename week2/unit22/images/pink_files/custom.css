@@ -1,0 +1,43 @@
+/* Put your magic here! ✨ */
+
+body {
+  background: #F6F0ED url('../assets/background.png');
+  background-size: contain;
+  color: #303036;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #28536B;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  transition: 0.3s all linear;
+}
+
+h1:hover {
+  background: #28536B;
+  color: #DAE0F2;
+  cursor: crosshair;
+}
+
+.fringe {
+  background: #DAE0F2 url('../assets/background.gif') center;
+  background-size: contain;
+  margin: 0 auto;
+  padding: 100px 50px;
+  width: 80%;
+}
+
+.card {
+  background: white;
+  border: 5px solid #fbb8b3;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  width: 80%;
+}
+
+.card span {
+  color: #28536B;
+}
