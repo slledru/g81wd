@@ -1,0 +1,11 @@
+p#changing {
+  padding: 1rem;
+  text-align: center;
+
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+label {
+  font-weight: bold;
+}

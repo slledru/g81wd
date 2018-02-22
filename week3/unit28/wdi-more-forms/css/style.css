@@ -1,0 +1,21 @@
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: black;
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: tomato;
+}
+
+form {
+  border: 1px solid gray;
+  padding: 0.5em;
+}
+
+div {
+  margin: 10px;
+}

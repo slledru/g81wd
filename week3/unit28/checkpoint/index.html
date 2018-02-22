@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Unit 28 Check Point</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/script.js">
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+        <!--
+
+          Build a form that includes the following:
+          - A validated email field that is required
+          - A validated password field that is required and
+                must be more than 8 characters
+          - A checkbox labeled "Admin"
+          - If the checkbox is checked, show another form field
+                called "Secret Password"
+          - The "Secret Password" input is required if and only
+                if the "Admin" checkbox is selected
+          - A submit button
+          - When the form is submitted, if the "Admin" checkbox
+                is checked but there is no password or it does
+                not match the secretPassword, show an error
+          - If everything is correct, show a success message
+
+          -->
+        <form id="all-forms">
+          <div>
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" minlength="8" required>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Admin</label>
+          </div>
+          <div class="secret-password-hide">
+            <label for="secret-password">Secret Password: </label>
+            <input type="password" name="secret-password" id="secret-password" minlength="8">
+          </div>
+          <div>
+            <input type="submit" name="submit" id="submit">
+          </div>
+        </form>
+        <div>
+          <p id="message">&nbsp;</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+div {
+  margin: 10px 5px;
+}
+
+.secret-password-hide {
+  visibility: collapse;
+}
+.secret-password-show {
+  visibility: visible;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}

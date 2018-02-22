@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms demo</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>будь умнее</h1>
+
+    <form id="credentials-form">
+      <h2>Signup</h2>
+      <div>
+        <label for="username">Username</label>
+        <input name="username" id="username" minlength="5" maxlength="11" required>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input name="password" id="password" type="password" minlength="11" required>
+      </div>
+
+      <div>
+        <input type="submit">
+      </div>
+    </form>
+
+    <form id="oops-form">
+      <h2>Oops I submitted again</h2>
+
+      <div>
+        <label for="oops">Oops</label>
+        <input name="oops" id="oops" required>
+      </div>
+
+      <div>
+        <label for="oops-count">Do it again</label>
+        <input name="oops-count" id="oops-count" type="number" min="1" max="10" value="5" required>
+      </div>
+
+      <div>
+        <input type="submit">
+      </div>
+
+      <p id="oops-output">&nbsp;</p>
+    </form>
+
+    <form>
+      <h2>Select Menu</h2>
+
+      <div>
+        <select id="colors" name="colors">
+          <option value="700-635 nm">Red</option>
+          <option value="635-590 nm">Orange</option>
+          <option value="590-560 nm">Yellow</option>
+          <option value="560-520 nm">Green</option>
+          <option value="490-450 nm">Blue</option>
+          <option value="450-400 nm" selected>Violet</option>
+        </select>
+      </div>
+
+      <p id="color-holder">&nbsp;</p>
+    </form>
+
+    <form id="radio-stations-form">
+      <h2>Radio buttons</h2>
+
+      <div id="radio-stations">
+        <input type="radio" name="radio-station" value="KOA 850 kHz">Talk radio</input>
+        <input type="radio" name="radio-station" value="KCFR 90.1 MHz" checked="checked">Soft, intellectual voices</input>
+        <input type="radio" name="radio-station" value="KVOD 88.1 MHz">Classical</input>
+      </div>
+
+      <p id="radio-station-name">&nbsp;</p>
+
+      <input type="submit">
+    </form>
+
+    <script
+			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

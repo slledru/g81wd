@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Forms demo</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>будь умнее</h1>
+  <form id="credentials-form">
+    <h2>Signup</h2>
+    <div>
+      <label for="username">Username:</label>
+      <input name="username" id="username" minlength="11" maxlength="19" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input name="password" id="password" type="password" minlength="11" maxlength="19" required>
+    </div>
+    <input type="submit">
+  </form>
+  <form id="oops-form">
+    <h2>Opps I submitted again</h2>
+    <div>
+      <label for="oops">Oops</label>
+      <input id="oops" name="oops" required>
+    </div>
+    <div>
+      <label for="oops-count">Do it again</label>
+      <input id="oops-count" name="oops-count" type="number" min="1" max="11" value="5" required>
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+    <p id="oops-output">&nbsp;</p>
+  </form>
+  <form id="radio-stations-form">
+    <h2>Radio buttons!!!</h2>
+    <div id="radio-stations">
+      <input type="radio" name="radio-station" value="KOA 859 kHz">Talk Radio</input>
+      <input type="radio" name="radio-station" value="KCFR 90.1 MHz" checked="checked">Soft, intellectual voices</input>
+      <input type="radio" name="radio-station" value="KVOD 90.1 MHz">Classical music for nerds</input>
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+    <p id="radio-station-name">&nbsp;</p>
+  </form>
+  <form id="">
+    <h2>Select a wavelength</h2>
+    <div>
+      <select id="colors" name="colors">
+        <option value="700-635 nm">Red</option>
+        <option value="635-590 nm">Orange</option>
+        <option value="590-560 nm">Yellow</option>
+        <option value="560-520 nm">Green</option>
+        <option value="490-450 nm" selected>Blue</option>
+        <option value="450-400 nm">Violet</option>
+      </select>
+    </div>
+    <p id="color-holder">&nbsp;</p>
+  </form>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
