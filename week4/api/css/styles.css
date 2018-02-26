@@ -1,0 +1,28 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.bacon-ipsum, .google-books {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.book {
+  height: 100%;
+  /* border: 1px solid #C8C8C8; */
+  padding: 2px;
+}
+.book h4 {
+  margin-top: 20px;
+}
+.img-thumbnail {
+  float: left;
+  width: 100px;
+  padding: 10px;
+}
+.warning {
+  font-weight: bold;
+}
+p {
+  margin: 2px;
+}
