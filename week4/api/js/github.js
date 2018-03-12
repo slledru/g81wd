@@ -1,13 +1,8 @@
 // https://api.github.com/graphql
 
 $(document).ready(() => {
-  const githubKey = loadLocalStorage().github.accessToken;
   $('#github-submit').click((event) => {
     event.preventDefault();
-    // const url = `https://api.github.com/repos/slledru/unit21-checkpoint/issues?access_token=${githubKey}`;
-    // const url = `https://api.github.com/user/repos?access_token=${githubKey}&page=1&per_page=100`
-// e871addd291b602f09463e1ce177035c4fd7f05b
-// const url = `https://api.github.com/users/slledru/repos?access_token=${githubKey}&page=1&per_page=100`
     const url = `https://api.github.com/users/slledru/repos?access_token=${githubKey}`
     $xhr = $.ajax({
       url: url,
