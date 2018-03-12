@@ -1,5 +1,6 @@
 $(document).ready(() => {
   const books = [];
+  const googleApiKey = loadLocalStorage().google.appKey;
   const renderBooks = () => {
     let bookSection = $('.google-books-result');
     bookSection.empty();
@@ -37,7 +38,6 @@ $(document).ready(() => {
   $('#google-books-submit').click((event) => {
     event.preventDefault();
     books.length = 0;
-    const googleApiKey = 'AIzaSyBrrC4Fr9eeNnYbxWhpiug3XlOHFhQBdzY';
     const bookTitle = $('#book-title').val();
     const url = `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&api_key=${googleApiKey}&maxResults=40`;
     let getJSON = $.getJSON(url);

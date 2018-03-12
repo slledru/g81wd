@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p>Search a string for "w3Schools", and display the position of the match:</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+
+  <script>
+    function myFunction() {
+      const pattern = '^[a-zA-Z]([a-zA-Z0-9]|-{1})*[^-]$';
+
+      const name1 = '-asd';
+      const name2 = 'asd-adwed-fwaef-';
+      const name3 = 'wfew-asd';
+      const name4 = 'awef--asd';
+      const name5 = 'afewfeasd';
+      let n1 = name1.match(/pattern/);
+      let n2 = name2.match(/pattern/);
+      let n3 = name3.match(/pattern/);
+      let n4 = name4.match(/pattern/);
+      let n5 = name5.match(/pattern/);
+
+      document.getElementById("demo1").innerHTML = n1;
+      document.getElementById("demo2").innerHTML = n2;
+      document.getElementById("demo3").innerHTML = n3;
+      document.getElementById("demo4").innerHTML = n4;
+      document.getElementById("demo5").innerHTML = n5;
+    }
+  </script>
+
+</body>
+
+</html>
