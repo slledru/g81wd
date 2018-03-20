@@ -8,6 +8,14 @@ const getParams = (queryString) => {
   // ?name=Cassie&type=mutt
   let params = {}
   if (queryString) {
+    // params = queryString
+    //   .split('&')
+    //   .map(line => line.split('='))
+    //   .reduce((params, pair) => {
+    //     params[pair[0]] = pair[1]
+    //     return params
+    //   }, {})
+
     params = queryString
       .split('&')
       .map(line => line.split('='))
