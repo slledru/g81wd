@@ -19,13 +19,13 @@ function readFile(filename) {
   })
 }
 
-readFile('README.mddd')
+readFile('README.md')
   .then((result) => {
     console.log(result)
   })
-  // .catch((err) => {
-  //   console.log(chalk.bgRed(err))
-  // })
+  .catch((err) => {
+    console.log(chalk.bgRed(err))
+  })
 
 
 console.log(chalk.green('Promise is now pending'))
