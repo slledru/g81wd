@@ -4,26 +4,39 @@ const jwt = require('jsonwebtoken')
 
 const KEY = process.env.KEY
 
-/* GET users listing. */
-router.get('/', (req, res, next) => {
-  // need to fix something
-  let user = {}
+// router.use((req, res, next) => {
+//   console.log('you are in the /users path')
+//   if (!req.cookies.user) {
+//     res.redirect('/')
+//   }
+//   else {
+//     next()
+//   }
+// })
+
+const isAuthenticated = (req, res, next) => {
   if (req.cookies.user) {
     jwt.verify(req.cookies.user, KEY, (err, payload) => {
       if (err) {
         next(err)
       }
       else {
-        user = payload
-        user.visits++
-        console.log('payload', user)
+        req.user = payload
+        next()
       }
     })
   }
   else {
-    user.visits = 1
-    user.name = 'Kinzie!!!'
+    res.redirect('/')
   }
+}
+
+/* GET users listing. */
+router.get('/', isAuthenticated, (req, res, next) => {
+  // need to fix something
+  let user = req.user
+  user.visits++
+  console.log('payload', user)
 
   let signedUser = jwt.sign(user, KEY)
   console.log('signedUser', signedUser)
