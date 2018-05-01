@@ -43,3 +43,12 @@ const clock2 = new Clock2()
 
 setTimeout(clock.tick, 1000)
 setTimeout(clock2.tick, 1000)
+
+class ProjectsController {
+  constructor() {
+    this.addProject = (project) => {
+      this.projects.push(project)
+    }
+    this.projects = []
+  }
+}

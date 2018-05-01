@@ -45,13 +45,6 @@ supertest
   "test": "mocha"
 }
 ```
-4. For deploying to Heroku, add the following in package.json.
-```
-"engines": {
-  "node": "9.8.0"
-}
-```
-5. You may not need "heroku-postbuild" script in package.json each time you push the latest to Heroku if you do not wish to recreate database tables.
 
 #### Setup Database
 1. On command line, run 'createdb' with database name
@@ -182,4 +175,45 @@ router.patch('/:id', (req, res, next) => {
 router.delete('/:id', (req, res, next) => {
   // Your code here
 })
+```
+
+#### Deploying to Heroku
+1. For deploying to Heroku, add the following in package.json.
+```
+"engines": {
+  "node": "9.8.0"
+}
+```
+2. You may not need "heroku-postbuild" script in package.json each time you push the latest to Heroku if you do not wish to recreate database tables.
+3. Login with email and password
+```
+heroku login
+```
+4. Create Heroku app
+```
+heroku apps:create <project name>
+```
+5. Setup any environment variables
+```
+$ heroku config --help
+display the config vars for an app
+
+USAGE
+  $ heroku config
+
+OPTIONS
+  -a, --app=app        (required) app to run command against
+  -r, --remote=remote  git remote of app to use
+  -s, --shell          output config vars in shell format
+  --json               output config vars in json format
+
+COMMANDS
+  config:edit   interactively edit config vars
+  config:get    display a config value for an app
+  config:set    set one or more config vars
+  config:unset  unset one or more config vars
+```
+6. Setup PostgreSQL as Database
+```
+heroku addons:create heroku-postgresql
 ```
