@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "pure-functions.js",
+  "scripts": {
+    "wdi-class-2": "babel-node -s -- wdi_class_2.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
