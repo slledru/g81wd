@@ -20,6 +20,7 @@ morgan
 knex
 pg
 humps
+helmet
 ```
 2. These are the npm modules needed for development only.
 ```
