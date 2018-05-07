@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CartHeader = () => {
+const CartHeader = () => (
   <header className="row">
     <nav>
       <div className="container">
@@ -12,4 +12,4 @@ const CartHeader = () => {
       </div>
     </nav>
   </header>
-}
+)
