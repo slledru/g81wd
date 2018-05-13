@@ -21,17 +21,20 @@ function reducerToDo(state, action) {
         selected: 0
       }
     case ADD_TASK:
-      return {
-        ...state,
-        todo: [
-          ...state.todo,
-          {
-            id: state.todo.length + 1,
-            task: action.payload.task,
-            status: FILTER_NEW
-          }
-        ]
+      if (state.todo.filter((item) => item.task === action.payload).length === 0) {
+        return {
+          ...state,
+          todo: [
+            ...state.todo,
+            {
+              id: state.todo.length + 1,
+              task: action.payload,
+              status: FILTER_NEW
+            }
+          ]
+        }
       }
+      break;
     case REMOVE_TASK:
       return {
         ...state,
@@ -72,7 +75,7 @@ function reducerToDo(state, action) {
         filter: FILTER_NEW
       }
     default:
-      return state
   }
   /* eslint-enable */
+  return state
 }
