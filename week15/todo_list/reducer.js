@@ -18,17 +18,17 @@ function reducerToDo(state, action) {
       return {
         filter: FILTER_ALL,
         todo: [],
-        selected: 0
+        selected: ''
       }
     case ADD_TASK:
-      if (state.todo.filter((item) => item.task === action.payload).length === 0) {
+      if (state.todo.filter((item) => item.task === action.payload.task).length === 0) {
         return {
           ...state,
           todo: [
             ...state.todo,
             {
               id: state.todo.length + 1,
-              task: action.payload,
+              task: action.payload.task,
               status: FILTER_NEW
             }
           ]
@@ -39,18 +39,18 @@ function reducerToDo(state, action) {
       return {
         ...state,
         todo: [
-          ...state.todo.filter((task) => task.id !== action.payload.id)
+          ...state.todo.filter((item) => item.task !== action.payload.task)
         ]
       }
     case COMPLETE_TASK:
       return {
         ...state,
         todo: [
-          ...state.todo.map((task) => {
-            if (task.id === action.payload.id) {
-              task.status = FILTER_COMPLETED
+          ...state.todo.map((item) => {
+            if (`${item.id}` === action.payload.id) {
+              item.status = FILTER_COMPLETED
             }
-            return task
+            return item
           })
         ]
       }
