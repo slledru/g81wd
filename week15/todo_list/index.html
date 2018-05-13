@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Redux To-Do List</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0/redux.js"></script>
+  <script type="text/javascript" src="./reducer.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+  <h1>Redux To-Do List</h1>
+  <ol id="to-do-list">
+
+  </ol>
+  <form>
+    <div>
+      <label for="task">Enter a Task</label>
+      <input type="text" name="task" id="task" placeholder="Enter a Task" required/>
+      <button type="submit" name="submit">Add New Task</button>
+    </div>
+  </form>
+  <div>
+    <button type="button" name="button" id="complete">Complete</button>
+    <button type="button" name="button" id="all">All Tasks</button>
+    <button type="button" name="button" id="completed">Completed Tasks</button>
+    <button type="button" name="button" id="new">New Tasks</button>
+  </div>
+</body>
+
+</html>
